@@ -30,8 +30,7 @@
 19. `genfstab -U /mnt >> /mnt/etc/fstab` to setup the fstab to match the current setup in `/mnt` (`-U` for uuids instead of `-L` for labels).
 20. `arch-chroot /mnt`
 21. `ln -sf /usr/share/zoneinfo/<Region>/<City> /etc/localtime` to setup the time zone.
-22. Sync the hardware clock with the ztstem clock `hwclock --systohc` (generates `
-/etc/adjtime`).
+22. Sync the hardware clock with the ztstem clock `hwclock --systohc` (generates `/etc/adjtime`).
 23. Uncomment the needed locales in `en_US.UTF-8 UTF-8`, and then generate them with `locale-gen`.
 24. Create `/etc/locale.conf` with `LANG=<desired-locale>`.
 25. Create `/etc/hostname` with `<hostname>`
