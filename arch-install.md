@@ -74,7 +74,7 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 - Block autoplay (brave://settings/content/autoplay)
 
 ### Gnome
-- [Extensions](https://extensions.gnome.org/): [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/), [dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [vitals](https://extensions.gnome.org/extension/1460/vitals/), [impatience](https://extensions.gnome.org/extension/277/impatience/) 
+- [Extensions](https://extensions.gnome.org/): [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/), [dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [vitals](https://extensions.gnome.org/extension/1460/vitals/), [impatience](https://extensions.gnome.org/extension/277/impatience/)
 - Adjust monitors positioning, refresh rate, and which one is main.
 - Remap interactive screenshot key (if needed).
 - Change dock to be on the main monitor only.
