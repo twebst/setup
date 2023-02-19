@@ -3,7 +3,7 @@
 ## Downloading
 1. Download from one of the mirrors [here](https://archlinux.org/download/) (iso, sig, checksums, and import signing key).
 2. Verify the checksums, and the sig file (make sure import the public signing key).
-3. Write to external thumbdrive.
+3. Write to external thumbdrive (e.g. use `dd`).
 
 ## Base install
 1. Setup up an internet connection with iwctl (assuming wireless).
@@ -60,3 +60,28 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 
 
 ## Packages
+- neovim (editor)
+- intel-ucode (processor microcode)
+- grub (bootloader)
+- efibootmgr (for modifying the EFI Boot Manager)
+- nvidia (proprietary nvidia drivers, requires restart)
+- cryptsetup (managing the luks device(s))
+- iw (wireless utility)
+- networkmanager (wireless utility, includes nmcli and nmtui)
+- lvm2 (needed for managing physical volumes, volume groups, and logical volumes).
+- man (read man pages)
+- zsh (alternative shell)
+- git
+- wget
+- gufw (simple firewall management with GUI)
+- gnome (desktop environment, without the extra apps included in gnome-extra), pick noto-ttf-fonts
+- gnome-shell-extensions (extensions for GNOME shell)
+- gnome-tweaks (editing extra GNOME settings graphically, normally hidden and edited with dconf-editor)
+- firefox (firefox web browser)
+- wl-clipboard (includes wl-copy and wl-paste, cmd line wayland clipboard utils)
+
+### Aur
+These packages are only available through the aur, and need to be installed (compiled) with a separate program (e.g. yay). Install yay by following [these instructions](https://github.com/Jguer/yay#installation).
+
+- gnome-browser-connector (system side util for gnome extension browser integration)
+- brave-bin (brave web browser)
