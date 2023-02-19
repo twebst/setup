@@ -71,7 +71,7 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 - Install Bitwarden
 - Install Gnome shell integration
 - Dark mode
-- Block [autoplay](brave://settings/content/autoplay)
+- Block autoplay: `brave://settings/content/autoplay`
 
 ### Gnome (wayland)
 - [Extensions](https://extensions.gnome.org/): [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/), [dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [vitals](https://extensions.gnome.org/extension/1460/vitals/), [impatience](https://extensions.gnome.org/extension/277/impatience/)
