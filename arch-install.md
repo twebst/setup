@@ -57,7 +57,27 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 35. `<reboot>`, and then continue to [post install](#post-install).
 
 ## Post Install
+### System (as root)
+- Uninstall epiphany (gnome web browser).
+- `useradd -aG wheel -s /usr/bin/zsh <user>` to create a non-root user (with zsh as the login shell). Also, login to this user and set a password (with `passwd`).
+- Edit `/etc/sudoers` to allow users of group wheel to run sudo commands (with password).
+- `cat ips >> /etc/hosts` to add the block list.
+- Enable the required systemd services `systemctl enable NetworkManager.service ufw.service gdm.service` (enabling `gdm.service` will replace the initial boot into the tty).
 
+### Firefox
+- Install ublock origin
+
+### Brave
+- Install Bitwarden
+- Install Gnome shell integration
+- Dark mode
+- Block autoplay (brave://settings/content/autoplay)
+
+### Gnome
+- [Extensions](https://extensions.gnome.org/): [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/), [dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [vitals](https://extensions.gnome.org/extension/1460/vitals/), [impatience](https://extensions.gnome.org/extension/277/impatience/) 
+- Adjust monitors positioning, refresh rate, and which one is main.
+- Remap interactive screenshot key (if needed).
+- Change dock to be on the main monitor only.
 
 ## Packages
 - neovim (editor)
