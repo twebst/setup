@@ -71,11 +71,11 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 - Install Bitwarden
 - Install Gnome shell integration
 - Dark mode
-- Block autoplay (brave://settings/content/autoplay)
+- Block [autoplay](brave://settings/content/autoplay)
 
-### Gnome
+### Gnome (wayland)
 - [Extensions](https://extensions.gnome.org/): [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/), [dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [vitals](https://extensions.gnome.org/extension/1460/vitals/), [impatience](https://extensions.gnome.org/extension/277/impatience/)
-- Adjust monitors positioning, refresh rate, and which one is main.
+- Adjust positioning of monitors, the refresh rate(s), and which one is main.
 - Remap interactive screenshot key (if needed).
 - Change dock to be on the main monitor only.
 
@@ -103,5 +103,5 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 ### Aur
 These packages are only available through the aur, and need to be installed (compiled) with a separate program (e.g. yay). Install yay by following [these instructions](https://github.com/Jguer/yay#installation).
 
-- gnome-browser-connector (system side util for gnome extension browser integration)
+- gnome-browser-connector (system util for gnome extension browser integration)
 - brave-bin (brave web browser)
