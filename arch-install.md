@@ -72,18 +72,19 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 - Dark mode
 - Block autoplay: `brave://settings/content/autoplay`
 
-### Gnome (wayland)
+### Gnome
 - [Extensions](https://extensions.gnome.org/): [clipboard history](https://extensions.gnome.org/extension/4839/clipboard-history/), [dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/), [vitals](https://extensions.gnome.org/extension/1460/vitals/), [impatience](https://extensions.gnome.org/extension/277/impatience/)
 - Adjust positioning of monitors, the refresh rate(s), and which one is main.
 - Remap interactive screenshot key (if needed).
 - Change dock to be on the main monitor only.
 
 ## Packages
-- neovim (editor)
+- emacs (editor)
+- vim (backup editor)
 - intel-ucode (processor microcode)
 - grub (bootloader)
 - efibootmgr (for modifying the EFI Boot Manager)
-- nvidia (proprietary nvidia drivers, requires restart)
+- nvidia (proprietary nvidia drivers, requires restart, remove kms hook in mkinitcpio.conf modules, this disables early kms start, which ...)
 - cryptsetup (managing the luks device(s))
 - iw (wireless utility)
 - networkmanager (wireless utility, includes nmcli and nmtui)
@@ -98,6 +99,7 @@ GRUB_PRELOAD_MODULES="part_gpt part_msdos lvm"
 - gnome-tweaks (editing extra GNOME settings graphically, normally hidden and edited with dconf-editor)
 - firefox (firefox web browser)
 - wl-clipboard (includes wl-copy and wl-paste, cmd line wayland clipboard utils)
+- python-pip
 
 ### Aur
 These packages are only available through the aur, and need to be installed (compiled) with a separate program (e.g. yay). Install yay by following [these instructions](https://github.com/Jguer/yay#installation).
