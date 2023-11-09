@@ -1,14 +1,15 @@
-# Static table lookup for hostnames.
-# See hosts(5) for details.
-
-# Taken from https://github.com/LukeSmithxyz/etc/blob/master/ips
+# Original https://github.com/LukeSmithxyz/etc/blob/master/ips
 # Ads, tracking and general junk
 0.0.0.0 www.twitch.tv
 0.0.0.0 m.youtube.com
 0.0.0.0 www.youtube.com
+0.0.0.0 www.reddit.com
+0.0.0.0 old.reddit.com
 0.0.0.0 ol.reddit.com
 0.0.0.0 4chan.org
 0.0.0.0 4channel.org
+0.0.0.0 www.4chan.org
+0.0.0.0 www.4channel.org
 0.0.0.0 scrolller.com
 0.0.0.0 redgifs.com
 
@@ -49685,4 +49686,3 @@
 0.0.0.0 gv.com
 0.0.0.0 blog.google
 0.0.0.0 localguidesconnect.com
-
